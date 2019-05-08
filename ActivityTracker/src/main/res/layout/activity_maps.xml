@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:weightSum="1"
+tools:context=".MapsActivity" >
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".80"/>
+    <!--android:background="#22bfb2"-->
+
+
+        <TextView
+            android:id="@+id/maptext"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".20"
+            android:layout_marginLeft="20dp"
+            android:text="Google Map Demo"
+            android:gravity="center"
+            android:drawablePadding="30dp"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/ic_directions_run_black_96dp"/>
+
+
+</LinearLayout>
